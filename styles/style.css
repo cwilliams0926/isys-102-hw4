@@ -7,6 +7,7 @@ body {
     display: grid;
     grid-template-areas: 'header header header' 'left right right' 'footer footer footer';
     grid-template-columns: 300px auto auto;
+    height: 100%;
 }
 
 .title {
@@ -78,12 +79,14 @@ body {
 .leftcolumn {
     background-color: #aaa8a8;
     grid-area: left;
+    min-height: 100vh;
 }
 
 .rightcolumn {
     grid-area: right;
     display: flex;
     flex-wrap: wrap;
+    min-height: 100vh;
 }
 
 .gallery {
