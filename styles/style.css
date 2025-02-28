@@ -4,12 +4,19 @@
 
 body {
     font-family: Arial;
+    display: grid;
+    grid-template-areas: 'header header header' 'left right right' 'footer footer footer';
+    grid-template-columns: 300px auto auto;
 }
 
-.header {
+.title {
     background-color: blueviolet;
     text-align: center;
     padding: 20px;
+}
+
+.header {
+    grid-area: header;
 }
 
 .top-navbar {
@@ -68,14 +75,12 @@ body {
 }
 
 .leftcolumn {
-    height: auto;
-    width: 25%;
     background-color: #aaa8a8;
+    grid-area: left;
 }
 
 .rightcolumn {
-    height: auto;
-    width: 75%;
+    grid-area: right;
 }
 
 div.gallery {
@@ -109,6 +114,7 @@ div.title {
 .footer {
     background-color: darkslategray;
     text-align: center;
-    padding: 10px
+    padding: 10px;
+    grid-area: footer;
 }
 
