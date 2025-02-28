@@ -25,6 +25,7 @@ body {
     padding: 0;
     overflow: hidden;
     background-color: black;
+    display: flex;
 }
 
 .top-navbar li {
@@ -81,6 +82,8 @@ body {
 
 .rightcolumn {
     grid-area: right;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .gallery {
