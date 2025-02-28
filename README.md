@@ -12,6 +12,8 @@ I made the entire <body> tag a grid container. I then made the header, left colu
 
 After getting the layout working properly using grid, I simply made the top navbar and right columns into flexboxes. It was as simple as adding *display: flex* to their containers. I added *flex-wrap: wrap* to the right column so that the image galleries line wrap. The assignment called for no changes to be made to the vertical navbar on the left, so I left that one alone.
 
+I later saw that on a bigger screen (than my laptop) the middle content didn't fill the viewport, so the footer would start right where the content would end (which is wherever the line-wrap took it). To fix this, I added a *min-height: 100vh* line to the left and right columns, and added a *grid-template-rows: auto 1fr auto* line to the body. This ensures that the header and footer stay their base height, while the middle content attempts to fill the user's viewport.
+
 There were some other changes and slight deviations from the previous assignment, but they weren't substantial enough to mention here.
 
 # Lessons Learned
