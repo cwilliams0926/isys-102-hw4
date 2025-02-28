@@ -21,7 +21,6 @@ body {
 }
 
 .top-navbar li {
-    float: left;
     border-radius: 5px;
 }
 
@@ -69,33 +68,23 @@ body {
 }
 
 .leftcolumn {
-    float: left;
     height: auto;
     width: 25%;
     background-color: #aaa8a8;
 }
 
 .rightcolumn {
-    float: left;
     height: auto;
     width: 75%;
-}
-
-.row::after {
-    content: "";
-    display: table;
-    clear: both;
 }
 
 div.gallery {
     margin: 5px;
     border: 1px solid #ccc;
     border-radius: 15px;
-    float: left;
     width: 250px;
     height: 400px;
     overflow: hidden;
-    position: relative;
 }
 
 div.gallery:hover {
